@@ -1,0 +1,1358 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sarabun", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+.indexpageheader {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+.otherpageheader {
+  background-color: #152028;
+}
+.navbar {
+  border-bottom: 1px solid #808080;
+}
+.navbar-brand {
+  margin: -30px 0 -30px 10%;
+}
+.otherpagenavbar-brand img {
+  filter: grayscale(70%);
+}
+.flexnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-nav {
+  margin-left: 5%;
+  width: 700px;
+}
+#dildropdown {
+  margin-top: 5px;
+  width: 250px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-item {
+  margin-left: 5%;
+}
+.navbar-nav a {
+  color: #e6e6e6;
+}
+.navbar-nav a:hover {
+  color: white;
+}
+
+/*-------------------Header alanı css kodu bitişi---------------------*/
+
+.mainintro {
+  width: 100%;
+  height: 940px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainintro img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(70%);
+}
+
+.mainintrotext {
+  padding: 20px;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  z-index: 2;
+}
+.routebutton {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #e6e6e6;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 40px 0 10px 0;
+  transition: 0.3s;
+}
+.routebutton:hover {
+  color: black;
+  background-color: #e6e6e6;
+  box-shadow: 0 5px 21px 0 #b3b3b3;
+}
+
+.companyinfoarea {
+  width: 100%;
+  height: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 40px 0;
+}
+.companyinfoarea img {
+  width: 80%;
+  height: 100%;
+  filter: brightness(80%);
+}
+.companyinfotext {
+  width: 50%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px);
+  font-size: 22px;
+  line-height: 40px;
+  padding: 20px;
+  color: white;
+  height: auto;
+  border-radius: 5px;
+  z-index: 999;
+  box-shadow: 0 5px 41px 0 #152028;
+}
+#smallscreenhakkımızda {
+  display: none;
+}
+.pageroute {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  margin: 0px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141e30;
+  color: #f2f2f2;
+}
+.routearea {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.routetext {
+  font-size: 20px;
+  width: 100%;
+}
+.routeheader {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  position: relative;
+}
+.imgarea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  transition: all 0.5s;
+}
+.column:nth-child(1),
+.column:nth-child(3) {
+  z-index: 1;
+}
+.column:nth-child(2) {
+  z-index: 2;
+}
+.column img:hover {
+  box-shadow: 5px 10px 10px 0 #152028;
+  transform: scale(1.01);
+}
+
+/*----------------------------Hakkımızda sayfası css kodu----------------------------*/
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.aboutuscontainer {
+  width: 75%;
+  height: 800px;
+  display: flex;
+  align-items: stretch;
+  background-color: #e6e6e6;
+  margin: 40px 0;
+  box-shadow: 0 5px 41px 0 #999999;
+}
+.aboutustextarea {
+  width: 50%;
+  padding: 50px;
+  height: 800px;
+}
+.aboutusheader {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+.aboutustext {
+  font-size: 20px;
+  margin-top: 100px;
+}
+.aboutusimgarea {
+  width: 50%;
+  height: 800px;
+  background-color: #152028;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-----------------------Sürdürülebilirlik css kodu----------------------------------*/
+.sustaincontainer {
+  width: 75%;
+  height: 800px;
+  display: flex;
+  align-items: stretch;
+  background-color: #e6e6e6;
+  margin: 40px 0;
+  box-shadow: 0 5px 41px 0 #999999;
+}
+.sustaintextarea {
+  width: 50%;
+  padding: 50px;
+  background-color: #152028;
+  color: #e6e6e6;
+}
+.sustainheader {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+.sustaintext {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.sustaincertificatesarea {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.sustaincertificatesarea img {
+  margin-top: 20px;
+}
+.sustainimgarea {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*------------------------Hizmetler css kodu-----------------------------------------*/
+.services-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.title {
+  font-size: 2.5rem;
+  margin: 40px 0;
+}
+.contentarea {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.servicecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px;
+  width: 20rem;
+  height: auto;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 20px 20px 41px 0 #c0c0c0;
+}
+.servicecard img {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.cardbody {
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+}
+.cardheader {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+/*-----------------------İletişim css kodu---------------------------------------------*/
+.contactarea {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+.contactformcontainer,
+.contactinfoarea {
+  width: 40%;
+  height: 650px;
+  padding-top: 50px;
+  position: relative;
+}
+.contactformcontainer textarea {
+  resize: none;
+}
+.contactheader,
+.contacticonsheader,
+.contactinfosheader {
+  font-size: 32px;
+  color: #1a1a1a;
+  text-align: center;
+}
+.contacticonsheader {
+  margin: 50px 0;
+}
+.contactinfosheader,
+.footercontactinfosheader {
+  margin-bottom: 50px;
+}
+.contactbutton,
+.contactinput,
+.contacttextarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.contactinput,
+.contacttextarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #999999;
+  transition: 0.3s;
+}
+.contactinput {
+  height: 50px;
+}
+.contactinput::placeholder,
+.contacttextarea::placeholder {
+  color: #152028;
+}
+.contactinput:focus,
+.contacttextarea:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 5px 21px 0 #b3b3b3;
+  outline: none;
+}
+.contactbutton {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #152028;
+  color: #152028;
+  font-size: 20px;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+.contactbutton:hover {
+  color: #f2f2f2;
+  background-color: #152028;
+  box-shadow: 0 5px 21px 0 #152028;
+}
+.contactinfos,
+.footercontactinfos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.contactinfo {
+  display: block;
+  width: 200px;
+}
+.contactinfoheader {
+  font-size: 20px;
+  text-align: center;
+}
+.contactinfoadress,
+.contactinfonumber,
+.footercontactinfonumber {
+  font-size: 16px;
+  text-align: center;
+}
+.contactinfonumber a,
+.footercontactinfonumber a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.contactpageiconcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.smallcontactpageiconcontainer {
+  display: none;
+}
+
+.socialmediacontainer p {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  color: #e6e6e6;
+}
+.smallcontactpageiconcontainer a {
+  text-decoration: underline;
+  color: #b3b3b3;
+}
+.smallcontactpageiconcontainer a:hover {
+  color: #e6e6e6;
+}
+.pagesmallicons a {
+  color: #1a1a1a;
+}
+.pagesmallicons a:hover {
+  color: grey;
+}
+/*-----------------------Footer alanı css kodu başlangıcı---------------------------*/
+
+.footercontainer {
+  display: block;
+  width: 100%;
+  background-color: #152028;
+  color: #e6e6e6;
+  padding: 20px;
+}
+.socialmediacontainer {
+  margin: 20px auto 0 auto;
+  height: auto;
+  width: 100%;
+  display: block;
+  padding: 20px;
+  color: #1a1a1a;
+}
+.socialmediacontainer p {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  color: #e6e6e6;
+}
+.socialmediacontainer a {
+  text-decoration: none;
+  color: white;
+}
+.contacticoncontainer {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.smallcontacticoncontainer {
+  display: none;
+}
+.button {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  float: left;
+  overflow: hidden;
+  transition: all 0.3s;
+  color: black;
+}
+.button:hover {
+  width: 200px;
+}
+.button:nth-child(1):hover {
+  color: white;
+  background-color: royalblue;
+}
+.button:nth-child(2):hover {
+  color: white;
+  background: linear-gradient(to right, #8a3ab9, #e95950, #fccc63);
+}
+
+.button:nth-child(3):hover {
+  color: white;
+  background-color: #0072b1;
+}
+.fadewrapper:nth-child(2) .button:hover {
+  color: white;
+  background: linear-gradient(to right, #8a3ab9, #e95950, #fccc63);
+}
+
+.fadewrapper:nth-child(3) .button:hover {
+  color: white;
+  background-color: #0072b1;
+}
+.button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50px;
+}
+.button strong {
+  margin-left: 10px;
+}
+.button .icon ion-icon {
+  font-size: 25px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.smallscreen-icon{
+  height: 40px;
+  width: 40px;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 3px;
+}
+.smallscreen-icon ion-icon{
+  width: 32px;
+  height: 32px;
+}
+.contactinfos,
+.footercontactinfos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.contactinfo {
+  display: block;
+  width: 200px;
+}
+.contactinfoheader {
+  font-size: 20px;
+  text-align: center;
+}
+.contactinfoadress,
+.contactinfonumber,
+.footercontactinfonumber {
+  font-size: 16px;
+  text-align: center;
+}
+.footercontactinfosheader {
+  color: #e6e6e6;
+  text-align: center;
+  font-size: 24px;
+  margin: 40px 0;
+}
+.footercontactinfos {
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.footercontactinfonumber a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+/*-------------------------------------Medya sorguları-----------------------------------------------*/
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .navbar-brand {
+    margin: -30px 0 -30px 0;
+  }
+  .navbar-nav {
+    margin-left: 0;
+  }
+  .mainintro {
+    height: 800px;
+  }
+  .companyinfoarea {
+    height: 800px;
+  }
+  .aboutusimgarea img {
+    width: 400px;
+    height: 600px;
+  }
+  .sustainimgarea {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .sustainimgarea img {
+    width: 250px;
+    height: 250px;
+  }
+  .sustaincontainer {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand {
+    margin: -30px 0 -30px 0;
+  }
+  .navbar-nav {
+    margin-left: -5%;
+    width: 500px;
+  }
+  .aboutusimgarea img {
+    width: 300px;
+    height: 500px;
+  }
+  .aboutustext {
+    font-size: 18px;
+  }
+  .sustaincontainer {
+    width: 90%;
+  }
+  .sustainimgarea {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .sustainimgarea img {
+    width: 250px;
+    height: 250px;
+  }
+  .sustaincertificatesarea {
+    margin-top: 20px;
+  }
+  .flexnav {
+    justify-content: space-evenly;
+  }
+  .nav-item {
+    margin-left: 2%;
+  }
+  .mainintro {
+    height: 700px;
+  }
+  .companyinfoarea {
+    height: 700px;
+  }
+  .companyinfoarea img {
+    width: 100%;
+  }
+  .companyinfotext {
+    width: 70%;
+  }
+  .routearea {
+    width: 70%;
+  }
+  .routebutton {
+    color: #1a1a1a;
+    background-color: #e6e6e6;
+    box-shadow: 0 5px 21px 0 #b3b3b3;
+  }
+  .contacticoncontainer {
+    display: none;
+  }
+  .smallcontacticoncontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+  .smallcontacticoncontainer a {
+    text-decoration: underline;
+    color: #b3b3b3;
+  }
+  .smallcontacticoncontainer a:hover {
+    color: #e6e6e6;
+  }
+  .contactbutton {
+    color: #f2f2f2;
+    background-color: #152028;
+    box-shadow: 0 5px 21px 0 #152028;
+  }
+  .contactpageiconcontainer {
+    display: none;
+  }
+  .smallcontactpageiconcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar {
+    background-color: rgba(21, 32, 40, 1);
+    border: none;
+  }
+  .navbar-brand {
+    margin-left: 0;
+  }
+  .flexnav {
+    display: block;
+  }
+  .navbar-nav {
+    margin-left: 12%;
+    margin-top: 20px;
+  }
+  .navbar-nav a:not(.active) {
+    color: #b3b3b3;
+  }
+  #dildropdown {
+    margin-left: 12%;
+  }
+  #dildropdown li {
+    margin-top: 10px;
+  }
+  .navbar-nav li {
+    margin-left: 0;
+  }
+  .mainintro {
+    height: 600px;
+  }
+  .mainintrotext {
+    font-size: 40px;
+  }
+  .companyinfoarea {
+    height: 600px;
+    justify-content: center;
+  }
+  .companyinfoarea img {
+    width: 100%;
+  }
+  .companyinfotext {
+    width: 70%;
+  }
+  .aboutuscontainer {
+    width: 90%;
+  }
+  .aboutustext {
+    font-size: 18px;
+  }
+  .aboutusimgarea img {
+    width: 300px;
+    height: 450px;
+  }
+  .sustaincontainer {
+    width: 90%;
+    display: block;
+    height: 1300px;
+  }
+  .sustaintextarea {
+    width: 100%;
+  }
+  .sustaincertificatesarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+  }
+  .sustainimgarea {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .sustainimgarea img {
+    width: 250px;
+    height: 250px;
+  }
+  .sustaintext {
+    font-size: 18px;
+  }
+  .routearea {
+    width: 70%;
+  }
+  .routebutton {
+    color: #1a1a1a;
+    background-color: #e6e6e6;
+    box-shadow: 0 5px 21px 0 #b3b3b3;
+  }
+  .contacticoncontainer {
+    display: none;
+  }
+  .socialmediacontainer p {
+    width: 100%;
+  }
+  .smallcontacticoncontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .smallcontacticoncontainer a {
+    text-decoration: underline;
+    color: #b3b3b3;
+  }
+  .smallcontacticoncontainer a:hover {
+    color: #e6e6e6;
+  }
+  .contactarea {
+    flex-direction: column;
+  }
+  .contactformcontainer,
+  .contactinfoarea {
+    width: 100%;
+  }
+  .contactbutton {
+    color: #f2f2f2;
+    background-color: #152028;
+    box-shadow: 0 5px 21px 0 #152028;
+  }
+  .contactpageiconcontainer {
+    display: none;
+  }
+
+  .smallcontactpageiconcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar {
+    background-color: rgba(21, 32, 40, 1);
+    border: none;
+  }
+  .navbar-brand {
+    margin-left: -40px;
+  }
+  .flexnav {
+    display: block;
+  }
+  .navbar-nav {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .navbar-nav a:not(.active) {
+    color: #b3b3b3;
+  }
+  #dildropdown {
+    margin-left: 50px;
+  }
+  #dildropdown li {
+    margin-top: 10px;
+  }
+  .navbar-nav li {
+    margin-left: 0;
+  }
+  .mainintro {
+    height: 600px;
+  }
+  .mainintrotext {
+    font-size: 40px;
+  }
+  .companyinfoarea {
+    display: none;
+  }
+  .aboutuscontainer {
+    width: 90%;
+    display: block;
+    height: 1600px;
+  }
+  .aboutustextarea {
+    width: 100%;
+    padding: 50px;
+  }
+  .aboutusimgarea {
+    width: 100%;
+  }
+  .sustaincontainer {
+    width: 90%;
+    display: block;
+    height: 1400px;
+  }
+  .sustainimgarea img {
+    width: 250px;
+    height: 250px;
+  }
+  .sustaintextarea {
+    width: 100%;
+    padding: 50px;
+  }
+  .sustainimgarea {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .sustaincertificatesarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+  }
+  #smallscreenhakkımızda {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .routearea {
+    width: 90%;
+  }
+  .routebutton {
+    color: #1a1a1a;
+    background-color: #e6e6e6;
+    box-shadow: 0 5px 21px 0 #b3b3b3;
+  }
+
+  .contacticoncontainer {
+    display: none;
+  }
+  .socialmediacontainer p {
+    width: 100%;
+  }
+  .smallcontacticoncontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .smallcontacticoncontainer a {
+    text-decoration: underline;
+    color: #b3b3b3;
+  }
+  .smallcontacticoncontainer a:hover {
+    color: #e6e6e6;
+  }
+  .contactarea {
+    flex-direction: column;
+  }
+  .contactbutton {
+    color: #f2f2f2;
+    background-color: #152028;
+    box-shadow: 0 5px 21px 0 #152028;
+  }
+  .contactformcontainer,
+  .contactinfoarea {
+    width: 100%;
+  }
+  .contactpageiconcontainer {
+    display: none;
+  }
+  .smallcontactpageiconcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 340px) and (max-width: 575px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar {
+    background-color: rgba(21, 32, 40, 1);
+    border: none;
+  }
+  .navbar-brand {
+    margin-left: -40px;
+  }
+  .flexnav {
+    display: block;
+  }
+  .navbar-nav {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .navbar-nav a:not(.active) {
+    color: #b3b3b3;
+  }
+  #dildropdown {
+    margin-left: 50px;
+  }
+  #dildropdown li {
+    margin-top: 10px;
+  }
+  .navbar-nav li {
+    margin-left: 0;
+  }
+  .mainintro {
+    height: 400px;
+  }
+  .mainintrotext {
+    font-size: 32px;
+  }
+  .companyinfoarea {
+    display: none;
+  }
+  .aboutuscontainer {
+    width: 90%;
+    display: block;
+    height: 1250px;
+  }
+  .aboutustextarea {
+    width: 100%;
+    padding: 50px;
+    height: 700px;
+  }
+  .aboutusheader {
+    text-align: center;
+  }
+  .aboutustext {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .aboutusimgarea {
+    width: 100%;
+    height: 550px;
+  }
+  .aboutusimgarea img {
+    width: 250px;
+    height: 350px;
+  }
+  .sustaincontainer {
+    width: 90%;
+    display: block;
+    height: 1600px;
+  }
+  .sustaintextarea {
+    width: 100%;
+    padding: 20px;
+    height: 700px;
+  }
+  .sustainheader {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .sustaintext {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .sustainimgarea {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .sustainimgarea img {
+    width: 200px;
+    height: 200px;
+  }
+  .sustaincertificatesarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 800px;
+  }
+  .sustaincertificatesarea img {
+    width: 100px;
+    height: 100px;
+  }
+  .sustaincertificatesarea img:nth-child(3),
+  .sustaincertificatesarea img:nth-child(6) {
+    width: 150px;
+  }
+  #smallscreenhakkımızda {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .routearea {
+    width: 100%;
+  }
+  .routebutton {
+    color: #1a1a1a;
+    background-color: #e6e6e6;
+    box-shadow: 0 5px 21px 0 #b3b3b3;
+  }
+
+  .contacticoncontainer {
+    display: none;
+  }
+  .socialmediacontainer p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .smallcontacticoncontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+  .smallcontacticoncontainer a {
+    text-decoration: underline;
+    color: #b3b3b3;
+  }
+  .smallcontacticoncontainer a:hover {
+    color: #e6e6e6;
+  }
+  .contactinfoadress,
+  .contactinfonumber {
+    font-size: 14px;
+  }
+  .footercontactinfos,
+  .contactinfos {
+    display: block;
+  }
+  .contactinfo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contactarea {
+    flex-direction: column;
+  }
+  .contactbutton {
+    color: #f2f2f2;
+    background-color: #152028;
+    box-shadow: 0 5px 21px 0 #152028;
+  }
+  .contactformcontainer,
+  .contactinfoarea {
+    width: 100%;
+    height: 550px;
+    margin: 10px 0;
+  }
+  .contactinfoarea {
+    height: 800px;
+  }
+  .contactpageiconcontainer {
+    display: none;
+  }
+  .smallcontactpageiconcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar {
+    background-color: rgba(21, 32, 40, 1);
+    border: none;
+  }
+  .navbar-brand {
+    margin-left: -60px;
+  }
+  .flexnav {
+    display: block;
+  }
+  .navbar-nav {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .navbar-nav a:not(.active) {
+    color: #b3b3b3;
+  }
+  #dildropdown {
+    margin-left: 40px;
+  }
+  #dildropdown li {
+    margin-top: 10px;
+  }
+  .navbar-nav li {
+    margin-left: 0;
+  }
+  .mainintro {
+    height: 300px;
+  }
+  .mainintrotext {
+    font-size: 32px;
+  }
+  .companyinfoarea {
+    display: none;
+  }
+  #smallscreenhakkımızda {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .routearea {
+    width: 100%;
+  }
+  .routebutton {
+    color: #1a1a1a;
+    background-color: #e6e6e6;
+    box-shadow: 0 5px 21px 0 #b3b3b3;
+  }
+
+  .aboutuscontainer {
+    width: 90%;
+    display: block;
+    height: 1250px;
+  }
+  .aboutustextarea {
+    width: 100%;
+    padding: 20px;
+    height: 650px;
+  }
+  .aboutusheader {
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .aboutustext {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .aboutusimgarea {
+    width: 100%;
+    height: 600px;
+  }
+  .aboutusimgarea img {
+    width: 200px;
+    height: 300px;
+  }
+  .sustaincontainer {
+    width: 90%;
+    display: block;
+    height: 1600px;
+  }
+  .sustaintextarea {
+    width: 100%;
+    padding: 20px;
+    height: 700px;
+  }
+  .sustainheader {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+  .sustaintext {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .sustainimgarea {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .sustainimgarea img {
+    width: 200px;
+    height: 200px;
+  }
+  .sustaincertificatesarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 800px;
+  }
+  .sustaincertificatesarea img {
+    width: 100px;
+    height: 100px;
+  }
+  .sustaincertificatesarea img:nth-child(3),
+  .sustaincertificatesarea img:nth-child(6) {
+    width: 150px;
+  }
+  .footercontainer {
+    padding: 0;
+  }
+
+  .contacticoncontainer {
+    display: none;
+  }
+  .socialmediacontainer p {
+    width: 100%;
+  }
+  .socialmediacontainer {
+    padding: 0;
+  }
+  .smallcontacticoncontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .smallcontacticoncontainer a {
+    text-decoration: underline;
+    color: #b3b3b3;
+  }
+  .smallcontacticoncontainer a:hover {
+    color: #e6e6e6;
+  }
+  .contactinfoadress,
+  .contactinfonumber {
+    font-size: 14px;
+  }
+  .footercontactinfos,
+  .contactinfos {
+    display: block;
+  }
+  .contactinfo {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .contactarea {
+    flex-direction: column;
+  }
+  .contactbutton {
+    color: #f2f2f2;
+    background-color: #152028;
+    box-shadow: 0 5px 21px 0 #152028;
+  }
+  .contactformcontainer,
+  .contactinfoarea {
+    width: 100%;
+    height: 550px;
+    margin: 10px 0;
+  }
+  .footercontainer {
+    padding: 0;
+  }
+  .contactpageiconcontainer {
+    display: none;
+  }
+  .smallcontactpageiconcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+  .contactinfoarea {
+    height: 800px;
+  }
+}
